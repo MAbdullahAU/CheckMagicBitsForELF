@@ -1,0 +1,18 @@
+FILE *file;
+  
+	char data[50];
+  
+	file = fopen("MainDrive.c", "rb"); 
+  
+	if (file == NULL)
+	{
+		printf("Error opening file.\n");
+  	}
+	
+	fgets ( data, 50, file );
+	
+	printf("%s", data);
+	
+	
+	ReadFile("MainDrive.c");
+	return 0;
